@@ -1,0 +1,30 @@
+#include<iostream.h>
+#include<conio.h>
+int main(){
+   char opt;
+   float num1,num2;
+   cout<<"Enter operator:+,-,*,/\n";
+   cin>>opt;
+   cout<<"Enter the numbers\n";
+   cin>>num1>>num2;
+   switch(opt){
+      case '+':
+	 cout<<num1<<"+"<<num2<<"="<<num1+num2<<"\n";
+	 break;
+
+      case '-':
+	 cout<<num1<<"-"<<num2<<"="<<num1-num2<<"\n";
+	 break;
+      case '*':
+	 cout<<num1<<"*"<<num2<<"="<<num1*num2<<"\n";
+	 break;
+      case '/':
+	 cout<<num1<<"/"<<num2<<"="<<num1/num2<<"\n";
+	 break;
+      default:
+	 cout<<"Enter valid choice";
+	 break;
+   }
+  getch();
+  return 0;
+}
